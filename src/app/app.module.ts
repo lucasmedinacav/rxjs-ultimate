@@ -10,6 +10,9 @@ import { IntervalTimerComponent } from './interval-timer/interval-timer.componen
 import { MapComponent } from './map/map.component';
 import { FilterComponent } from './filter/filter.component';
 import { FromeventScrollComponent } from './fromevent-scroll/fromevent-scroll.component';
+import { ReduceComponent } from './reduce/reduce.component';
+import { ScanComponent } from './scan/scan.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FromeventScrollComponent } from './fromevent-scroll/fromevent-scroll.co
     IntervalTimerComponent,
     MapComponent,
     FilterComponent,
-    FromeventScrollComponent
+    FromeventScrollComponent,
+    ReduceComponent,
+    ScanComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule
