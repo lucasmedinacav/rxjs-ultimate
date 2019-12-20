@@ -13,6 +13,8 @@ import { FromeventScrollComponent } from './fromevent-scroll/fromevent-scroll.co
 import { ReduceComponent } from './reduce/reduce.component';
 import { ScanComponent } from './scan/scan.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { TapComponent } from './tap/tap.component';
+import { TakeComponent } from './take/take.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CountdownComponent } from './countdown/countdown.component';
     FromeventScrollComponent,
     ReduceComponent,
     ScanComponent,
-    CountdownComponent
+    CountdownComponent,
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule
