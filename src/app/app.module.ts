@@ -15,6 +15,8 @@ import { ScanComponent } from './scan/scan.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
+import { TakeUntilComponent } from './take-until/take-until.component';
+import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TakeComponent } from './take/take.component';
     ScanComponent,
     CountdownComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    TakeUntilComponent,
+    DistinctUntilChangedComponent
   ],
   imports: [
     BrowserModule
