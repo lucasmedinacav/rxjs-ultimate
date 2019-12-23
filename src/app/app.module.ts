@@ -15,6 +15,7 @@ import { ScanComponent } from './scan/scan.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TakeComponent } from './take/take.component';
     ScanComponent,
     CountdownComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    MergeMapComponent
   ],
   imports: [
     BrowserModule
