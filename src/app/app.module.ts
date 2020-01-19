@@ -18,6 +18,7 @@ import { TakeComponent } from './take/take.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
     TakeComponent,
     TakeUntilComponent,
     DistinctUntilChangedComponent,
-    DebounceTimeComponent
+    DebounceTimeComponent,
+    MergeMapComponent
   ],
   imports: [
     BrowserModule
