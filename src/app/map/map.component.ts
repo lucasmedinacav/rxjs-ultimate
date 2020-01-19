@@ -31,6 +31,12 @@ export class MapComponent implements OnInit {
       .pipe(
         mapTo('Fui acionado')
       ).subscribe(value => console.log('mapTo', value));
+
+    /* const up$ = fromEvent(upButton, 'click');
+    const down$ = fromEvent(downButton, 'click');
+
+    up$.pipe(mapTo(1));
+    down$.pipe(mapTo(-1)); */
   }
 
   private executaAlgo(): void {

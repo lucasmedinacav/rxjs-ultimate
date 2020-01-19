@@ -17,6 +17,7 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct
     TapComponent,
     TakeComponent,
     TakeUntilComponent,
-    DistinctUntilChangedComponent
+    DistinctUntilChangedComponent,
+    DebounceTimeComponent
   ],
   imports: [
     BrowserModule
