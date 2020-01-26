@@ -19,6 +19,12 @@ import { TakeUntilComponent } from './take-until/take-until.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
+import { FlatMapComponent } from './flat-map/flat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
+import { PollingDogComponent } from './polling-dog/polling-dog.component';
+import { StartEndWithComponent } from './start-end-with/start-end-with.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +45,13 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
     TakeUntilComponent,
     DistinctUntilChangedComponent,
     DebounceTimeComponent,
-    MergeMapComponent
+    MergeMapComponent,
+    FlatMapComponent,
+    SwitchMapComponent,
+    ConcatMapComponent,
+    ExhaustMapComponent,
+    PollingDogComponent,
+    StartEndWithComponent
   ],
   imports: [
     BrowserModule
