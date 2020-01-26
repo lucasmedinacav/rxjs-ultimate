@@ -25,6 +25,7 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
 import { PollingDogComponent } from './polling-dog/polling-dog.component';
 import { StartEndWithComponent } from './start-end-with/start-end-with.component';
+import { ConcatComponent } from './concat/concat.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { StartEndWithComponent } from './start-end-with/start-end-with.component
     ConcatMapComponent,
     ExhaustMapComponent,
     PollingDogComponent,
-    StartEndWithComponent
+    StartEndWithComponent,
+    ConcatComponent
   ],
   imports: [
     BrowserModule
