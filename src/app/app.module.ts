@@ -26,6 +26,9 @@ import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
 import { PollingDogComponent } from './polling-dog/polling-dog.component';
 import { StartEndWithComponent } from './start-end-with/start-end-with.component';
 import { ConcatComponent } from './concat/concat.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
+import { MortgageCalculatorComponent } from './mortgage-calculator/mortgage-calculator.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { ConcatComponent } from './concat/concat.component';
     ExhaustMapComponent,
     PollingDogComponent,
     StartEndWithComponent,
-    ConcatComponent
+    ConcatComponent,
+    CombineLatestComponent,
+    ForkJoinComponent,
+    MortgageCalculatorComponent
   ],
   imports: [
     BrowserModule
