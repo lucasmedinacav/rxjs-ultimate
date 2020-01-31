@@ -32,6 +32,11 @@ import { MortgageCalculatorComponent } from './mortgage-calculator/mortgage-calc
 import { SubjectComponent } from './subject/subject.component';
 import { LoadingComponent } from './loading/loading.component';
 import { MulticastShareComponent } from './multicast-share/multicast-share.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { AsyncSchedulerComponent } from './async-scheduler/async-scheduler.component';
+import { AsapSchedulerComponent } from './asap-scheduler/asap-scheduler.component';
+import { AnimationFrameSchedulerComponent } from './animation-frame-scheduler/animation-frame-scheduler.component';
+import { QueueSchedulerComponent } from './queue-scheduler/queue-scheduler.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +70,12 @@ import { MulticastShareComponent } from './multicast-share/multicast-share.compo
     MortgageCalculatorComponent,
     SubjectComponent,
     LoadingComponent,
-    MulticastShareComponent
+    MulticastShareComponent,
+    AsyncSubjectComponent,
+    AsyncSchedulerComponent,
+    AsapSchedulerComponent,
+    AnimationFrameSchedulerComponent,
+    QueueSchedulerComponent
   ],
   imports: [
     BrowserModule
