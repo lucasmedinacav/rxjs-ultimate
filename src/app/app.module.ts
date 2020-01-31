@@ -29,6 +29,9 @@ import { ConcatComponent } from './concat/concat.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { MortgageCalculatorComponent } from './mortgage-calculator/mortgage-calculator.component';
+import { SubjectComponent } from './subject/subject.component';
+import { LoadingComponent } from './loading/loading.component';
+import { MulticastShareComponent } from './multicast-share/multicast-share.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import { MortgageCalculatorComponent } from './mortgage-calculator/mortgage-calc
     ConcatComponent,
     CombineLatestComponent,
     ForkJoinComponent,
-    MortgageCalculatorComponent
+    MortgageCalculatorComponent,
+    SubjectComponent,
+    LoadingComponent,
+    MulticastShareComponent
   ],
   imports: [
     BrowserModule
