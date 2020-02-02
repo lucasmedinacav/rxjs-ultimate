@@ -40,6 +40,7 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
 import { TakeComponent } from './take/take.component';
 import { TapComponent } from './tap/tap.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { TapComponent } from './tap/tap.component';
     BehaviorSubjectComponent,
     StoreComponent,
     ReplaySubjectComponent,
-    ShareReplayComponent
+    ShareReplayComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule
