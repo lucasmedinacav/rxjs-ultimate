@@ -41,6 +41,9 @@ import { TakeUntilComponent } from './take-until/take-until.component';
 import { TakeComponent } from './take/take.component';
 import { TapComponent } from './tap/tap.component';
 import { TestComponent } from './test/test.component';
+import { CustomRetryComponent } from './custom-retry/custom-retry.component';
+import { WithLatestFromComponent } from './with-latest-from/with-latest-from.component';
+import { PartitionComponent } from './partition/partition.component';
 
 
 @NgModule({
@@ -85,7 +88,10 @@ import { TestComponent } from './test/test.component';
     StoreComponent,
     ReplaySubjectComponent,
     ShareReplayComponent,
-    TestComponent
+    TestComponent,
+    CustomRetryComponent,
+    WithLatestFromComponent,
+    PartitionComponent
   ],
   imports: [
     BrowserModule

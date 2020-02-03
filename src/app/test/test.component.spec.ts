@@ -1,5 +1,5 @@
-import { concat, from } from 'rxjs';
-import { map, take, delay } from 'rxjs/operators';
+import { concat, from, of } from 'rxjs';
+import { map, take, delay, mergeMap, toArray } from 'rxjs/operators';
 import { TestScheduler } from 'rxjs/testing';
 
 describe('RXJS Testing', () => {
@@ -80,6 +80,35 @@ describe('RXJS Testing', () => {
       const expected = '200ms (abcde|)';
 
       expectObservable(final$).toBe(expected, { a: 1, b: 2, c: 3, d: 4, e: 5 });
+    });
+  });
+
+  it('should let you test async operations with done callback', done => {
+    const source$ = of('Ready', 'Set', 'Go!').pipe(
+      mergeMap((message, index) => of(message).pipe(
+        delay(index * 1000)
+      ))
+    );
+
+    const expected = ['Ready', 'Set', 'Go!'];
+    let index = 0;
+
+    source$.subscribe(val => {
+      expect(val).toEqual(expected[index]);
+      index++;
+    }, null, done);
+  });
+
+  it('should compare emitted values on completion with toArray', () => {
+    const source$ = of(1, 2, 3);
+    const final$ = source$.pipe(
+      map(val => val * 10),
+      toArray()
+    );
+
+    const expected = [10, 20, 30];
+    final$.subscribe(val => {
+      expect(val).toEqual(expected);
     });
   });
 });
