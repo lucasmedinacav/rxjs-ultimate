@@ -44,6 +44,9 @@ import { TestComponent } from './test/test.component';
 import { CustomRetryComponent } from './custom-retry/custom-retry.component';
 import { WithLatestFromComponent } from './with-latest-from/with-latest-from.component';
 import { PartitionComponent } from './partition/partition.component';
+import { FirstLastComponent } from './first-last/first-last.component';
+import { SkipWhileDistinctComponent } from './skip-while-distinct/skip-while-distinct.component';
+import { BufferComponent } from './buffer/buffer.component';
 
 
 @NgModule({
@@ -91,7 +94,10 @@ import { PartitionComponent } from './partition/partition.component';
     TestComponent,
     CustomRetryComponent,
     WithLatestFromComponent,
-    PartitionComponent
+    PartitionComponent,
+    FirstLastComponent,
+    SkipWhileDistinctComponent,
+    BufferComponent
   ],
   imports: [
     BrowserModule
