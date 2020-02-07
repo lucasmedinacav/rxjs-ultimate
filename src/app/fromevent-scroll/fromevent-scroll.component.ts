@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fromEvent } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, throttleTime, debounceTime, auditTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-fromevent-scroll',
@@ -27,11 +27,13 @@ export class FromeventScrollComponent implements OnInit {
 
     const eventScroll$ = fromEvent(document, 'scroll')
       .pipe(
+        throttleTime(30),
         map(({ target }: any) =>
           this.calculateScrollPercent(
             target.documentElement
           ))
       ).subscribe(percent => {
+        console.log(percent);
         progressBar.style.width = `${percent}%`;
       });
   }

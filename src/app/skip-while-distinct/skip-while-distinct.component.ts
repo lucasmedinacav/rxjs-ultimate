@@ -32,7 +32,7 @@ export class SkipWhileDistinctComponent implements OnInit {
 
     times$.pipe(
       filter(time => time.titulosBrasileiros > 8),
-      //NÃO FUNCIONA COMO OBJETO INTEIRO, APENAS SELECIONANDO UM ATRIBUTO
+      // NÃO FUNCIONA COMO OBJETO INTEIRO, APENAS SELECIONANDO UM ATRIBUTO
       distinct(time => time.time)
     ).subscribe(console.log);
 
